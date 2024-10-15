@@ -63,7 +63,8 @@ html {
     opacity: 1;
     transition: all .07s ease-in-out;
 }
-.callback{
+.btn-open{
+    cursor: pointer;
     padding-top: 10px;
     margin-top: 21px;
     margin-bottom: 21px;
@@ -77,9 +78,101 @@ html {
     border-radius: 100px;
     transition: all .1s ease-in-out;
 }
-.callback:hover{
+.btn-open:hover{
     transition:  0.3s ease;
     transform: scale(1.2);
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(12, 0, 0, 0.5);
+    opacity: 1;
+  }
+  
+ .is-hidden {
+    opacity: 0;
+    pointer-events: 0;
+    visibility: hidden;
+  }
+  
+  /* .no-scroll {
+    overflow: hidden;
+  }  */
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 800px;
+    min-height: 900px;
+    padding: 15px;
+    background-color: plum;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+.btn{
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: peachpuff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}  
+.btn:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+.title_window{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+}
+.first-name{
+    font-size: 40px;
+}
+.first-name input{
+    padding: 14px;
+    font-size: 15px;
+}
+.last-name{
+    font-size: 40px;
+}
+.last-name input{
+    padding: 14px;
+    font-size: 15px;
+}
+.email{
+    font-size: 40px;
+}
+.email input{
+    padding: 14px;
+    font-size: 15px;
+}
+.button_window{
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: peachpuff;
+    padding-top:24px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+.button_window:hover{
+    transition:  0.3s ease;
+    transform: scale(1.03);
 }
 /* Main---------------------------------------------------------------------------------------------- */
 .Main {
